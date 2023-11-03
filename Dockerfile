@@ -14,8 +14,7 @@ WORKDIR /app/avalanchego/
 
 RUN /app/avalanchego/scripts/build.sh
 
-FROM ubuntu@sha256:b25ef49a40b7797937d0d23eca3b0a41701af6757afca23d504d50826f0b37ce
-
+FROM ubuntu:jammy
 WORKDIR /app
 
 ENV HTTP_HOST=0.0.0.0 \
