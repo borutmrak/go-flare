@@ -5,7 +5,7 @@ RUN apt-get update -y && \
 
 WORKDIR /app/
 
-COPY ./.git /app/.git
+COPY .git /app/.git
 COPY ./avalanchego /app/avalanchego
 COPY ./config /app/config
 COPY ./coreth /app/coreth
